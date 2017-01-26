@@ -1,0 +1,31 @@
+<section class="container">
+  <div class="row">
+
+    <div class="col-xs-12 panel event-detail">
+      <div class="row">
+        
+        <div class="col-xs-12 col-md-6 event-info">
+          <h2 class="event-detail-header">{{ eventInfo.name }}</h2>
+          <h4 class="event-detail-subheader text-muted">{{ eventInfo.start }} <span ng-show="eventInfo.end">- {{ eventInfo.end }}</span></h4>
+          <h4 class="event-detail-link" ng-if=" eventInfo.external_url">(More info: <a href="{{ eventInfo.external_url }}">{{ eventInfo.external_url }}</a>)</h4>
+
+          <div marked="eventInfo.description" class="event-description"></div>
+        </div>
+        <div class="col-xs-12 col-md-6 event-location">
+          <h3>{{ eventInfo.location.name }}</h3>
+          <h4>{{ eventInfo.location.street_address }}, {{ eventInfo.location.city }}<span ng-show="eventInfo.location.postal_code">, {{ eventInfo.location.postal_code }}</span></h4>
+          <div class="google-maps">
+            <iframe width="450"
+                height="500"
+                frameborder="0" style="border:1px #000 solid"
+                ng-src="{{ mapsUrl }}" allowfullscreen >
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+

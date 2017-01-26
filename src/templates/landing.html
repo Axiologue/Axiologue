@@ -1,0 +1,156 @@
+<div class="container">
+  <div class="row">
+
+    <!-- Introduction -->
+    <div class="col-md-6">
+      <div class="panel header-panel">
+        <h2 class="text-center">Welcome to Axiologue</h2>
+
+        <p>Axiologue is a community-based project dealing with corporate and consumer ethics.  Check out some of our projects and resources <span class="hidden-xs hidden-sm">to the right</span><span class="hidden-md hidden-lg">below</span>, or come to one of our upcoming events!</p>
+
+      </div>
+    </div>
+
+    <!-- Axiologue Projects -->
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Our Projects</h3>
+        </div>
+        <div class="panel-body">
+
+          <div class="project-item" ng-repeat="project in projects">
+            <div class="project-icon">
+              <div class="icon-text">{{ project.title.slice(0, 1).toUpperCase() }}</div>
+            </div>
+            <dl>
+              <dt><a href="{{ project.url }}">{{ project.title }}</a></dt>
+              <dd>{{ project.description }}</dd>
+            </dl>
+          </div>
+
+          <div class="project-item">
+            <div class="project-icon yours">
+              <div class="icon-text"><i class="fa fa-plus"></i></div>
+            </div>
+            <dl>
+              <dt><a href="{{ project.url }}">Your Project Here!</a></dt>
+              <dd>Come to one of our participatory build events to have your own consumer ethics project hosted on Axiologue's website</dd>
+            </dl>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Events -->
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Events</h3>
+        </div>
+        <div class="panel-body">
+          <div class="event-item" ng-repeat="event in events">
+            <dl>
+              <dt><a href="/events/event/{{event.id}}">{{ event.name }}</a></dt>
+              <dd>{{ event.location.name }}, {{ event.location.city }}</dd>
+              <dd>{{ event.start }}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Blog</h3>
+        </div>
+        <div class="panel-body">
+
+            <div class="post-item" ng-repeat="post in blog">
+              <dl>
+                <dt><a href="/blog/post/{{ post.title_url }}">{{ post.title }}</a></dt>
+                <dd>{{ post.sub_title }}</dd>
+                <dd class="text-muted">posted by <strong>{{ post.posted_by }}</strong> at {{ post.pub_time }}</dd>
+              </dl>
+            </div>
+
+            <a href="blog/all/" class="btn btn-default">See More Posts</a>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- Friend's Projects -->
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Other Great Consumer Ethics Resources</h3>
+        </div>
+        <div class="panel-body">
+
+          <div class="project-item" ng-repeat="project in friends">
+            <div class="project-icon">
+              <div class="icon-text">{{ project.title.slice(0, 1).toUpperCase() }}</div>
+            </div>
+            <dl>
+              <dt><a href="{{ project.url }}">{{ project.title }}</a></dt>
+              <dd>{{ project.description }}</dd>
+            </dl>
+          </div>
+
+          <p>Know another great resource?  <a href="MAILTO:info@axiologue.org">Email us</a> and let us know!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="panel">
+        <div class="panel-heading">
+          <h3 class="panel-title">Stay in touch</h3>
+        </div>
+        <div class="panel-body">
+ <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form action="//axiologue.us10.list-manage.com/subscribe/post?u=a4380cffd095d122a97aaeae6&amp;id=1b7d52909b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-white" target="_blank" novalidate>
+                <label>Sign up for our mailing list</label>
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group form-group">
+                    <label for="mce-EMAIL" class="sr-only">Email Address (required) </label>
+                    <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Enter Your Email Address (required)">
+                  </div>
+                  <div class="mc-field-group form-group">
+                    <label for="mce-FNAME" class="sr-only">First Name </label>
+                    <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Enter First Name">
+                  </div>
+                  <div class="mc-field-group form-group">
+                    <label for="mce-LNAME" class="sr-only">Last Name </label>
+                    <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME" placeholder="Enter Last Name">
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>   
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a4380cffd095d122a97aaeae6_1b7d52909b" tabindex="-1" value=""></div>
+                  <div class="clear">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

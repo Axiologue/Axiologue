@@ -1,0 +1,29 @@
+{
+  "name": "freefairdashboard",
+  "description": "CMS for the Free, Fair, and Unfettered site",
+  "main": "index.js",
+  "authors": [
+    "Matt Nishi-Broach, Clarinda Mac Low, and Alexis Clements"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.freefairunfettered.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "angular-resource": "^1.6.1",
+    "font-awesome": "^4.7.0",
+    "angular-marked": "^1.2.2"
+  },
+  "resolutions": {
+    "angular": "^1.6.1"
+  }
+}

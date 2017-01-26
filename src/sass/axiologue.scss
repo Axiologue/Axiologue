@@ -1,0 +1,173 @@
+// bower:scss
+// endbower
+
+/********************************************************************************************
+General
+********************************************************************************************/
+body {
+  background: #f0f0f0;
+}
+
+/********************************************************************************************
+Header
+********************************************************************************************/
+.header-panel {
+  padding: 50px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+/********************************************************************************************
+Project Item
+********************************************************************************************/
+.project-item {
+  .project-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-size: 30px;
+
+    &.yours {
+      font-size: 20px;
+    }
+
+    .icon-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}
+
+/********************************************************************************************
+Principles List
+********************************************************************************************/
+
+ul.principles-list {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+.principles-list >  li {
+  margin-left: 2.14285714em;
+  width: 100%;
+  display: inline-block;
+  float: left;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .principles-list > li {
+    width: 45%;
+  }
+}
+
+.principles-list li h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+ul.principles-list a {
+  text-decoration: underline;
+}
+/********************************************************************************************
+Blog List 
+********************************************************************************************/
+
+.blog-list {
+  list-style: none;
+  padding: 0 0 0 20px;
+
+  li {
+    padding: 0 20px;
+    display: block;
+    margin: 20px auto 40px;
+
+    .recent-header {
+      margin-bottom: 0;
+    }
+
+    .recent-subheader {
+      margin-top: 0;
+    }
+  }
+}
+
+/********************************************************************************************
+Blog Detail 
+********************************************************************************************/
+.post {
+  padding: 30px;
+
+  .post-header {
+    margin-bottom: 30px;
+
+    .post-title {
+      margin-bottom: 0;
+    }
+
+    .post-subtitle {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+/********************************************************************************************
+Event List 
+********************************************************************************************/
+
+.event-list {
+  list-style: none;
+
+  .event-item {
+    margin-bottom: 30px;
+
+    .event-list-content {
+      margin-left: 40px;
+
+      .event-header {
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      .event-subheader {
+        margin-top: 0;
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/********************************************************************************************
+Event Detail
+********************************************************************************************/
+.event-detail {
+  padding: 15px 40px;
+
+  .event-info {
+    .event-detail-header {
+      margin-bottom: 0;
+    }
+
+    .event-detail-subheader {
+      margin: 0;
+    }
+
+    .event-description {
+      margin-top: 30px;
+    }
+  }
+}
